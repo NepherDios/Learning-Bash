@@ -6,7 +6,7 @@ function valid_num_of_args(){
 
 function valid_file_name(){
     #Regex arguments validation
-    #Checks if the name contains letters, numbers and undercore only before extensions
+    #Checks if the name contains letters, numbers and underscore only before extensions
     #Letting second extensions as an option for the user
 
     [[ $1 =~ ^[a-zA-Z0-9_]+\.[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)?$ ]] || return 1
